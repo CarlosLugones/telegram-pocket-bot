@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "reading-list-bot"
+version = "0.1.0"
+description = "Save URLs from Telegram to Pocket"
+authors = ["Carlos Lugones <contact@lugodev.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+python-telegram-bot = "^13.5"
+emoji = "^1.2.0"
+python-dotenv = "^0.17.1"
+Django = "^3.2.2"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  reading-list-bot:
+    build:
+      context: "."
+      dockerfile: Dockerfile
+    environment:
+      - TELEGRAM_TOKEN=${TELEGRAM_TOKEN}
+      - POCKET_CONSUMER_KEY=${POCKET_CONSUMER_KEY}
+    volumes:
+      - "/apps/reading-list-bot/codebase:/codebase"
+      - "/apps/reading-list-bot/storage:/storage"
+    restart: always
